@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Page d'Authentification</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="login-container">
+            <form method="POST" id="formulaire">
+                <h1 display="none" id="erreur"></h1>
+                <div class="IM1">
+                    <h2>Harry Potter</h2>
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            name="email"
+                            id="email"
+                            placeholder="E-mail"
+                            required
+                        />
+                    </div>
+                    <div class="input-group">
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Password"
+                            required
+                        />
+                    </div>
+                </div>
+                <a href="#">Mot de passe oublié ?</a>
+                <button type="submit">SIGN IN</button>
+                <div class="hr-with-text">
+                    <hr />
+                    <span>Ou</span>
+                    <hr />
+                </div>
+                <button>SIGN UP</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

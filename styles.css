@@ -1,0 +1,99 @@
+/* Styles de base pour le corps de la page */
+body {
+    font-family: "Arial", sans-serif; /* Police de caractères utilisée */
+    background-image: url(Image/F_HP.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex; /* Permet de centrer les éléments */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    height: 100vh; /* Prend la hauteur totale de la fenêtre */
+    margin: 0; /* Pas d'espace extérieur */
+}
+
+/* Conteneur du formulaire de connexion */
+.login-container {
+    background: rgba(255, 255, 255, 0);
+    /* background: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(52, 52, 52, 0.3) 42%,
+        rgba(146, 146, 146, 0.3) 100%
+    ); */
+    backdrop-filter: blur(10px);
+    padding: 20px; /* Espacement interne */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Ombre pour la profondeur */
+    width: 400px; /* Largeur fixe du conteneur */
+    height: 500px;
+    text-align: center; /* Texte centré */
+}
+
+/* Titre de la page de connexion */
+.login-container h2 {
+    margin-bottom: 20px; /* Espace sous le titre */
+    color: #ffffff; /* Couleur du texte */
+    font-size: 32px;
+    margin: 40px;
+}
+
+/* Styles des champs d'entrée (e-mail, mot de passe) */
+.login-container input {
+    width: 90%; /* Prend la largeur totale du conteneur */
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 15px; /* Espace entre les champs */
+    border: 1px solid #ccc; /* Bordure des champs */
+    border-radius: 10px; /* Coins arrondis */
+    height: 40px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+/* Bouton de connexion */
+.login-container button {
+    width: 85%; /* Prend la largeur totale du conteneur */
+    padding: 10px; /* Espacement interne */
+    background-color: #3c5067; /* Couleur du bouton */
+    color: #ffffff; /* Couleur du texte */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointer sur hover */
+    transition: background-color 0.3s; /* Transition pour les effets visuels */
+    margin: 30px;
+}
+
+/* Effet survol pour le bouton de connexion */
+.login-container button:hover {
+    background-color: #849fcc; /* Change la couleur au survol */
+}
+
+/* Lien pour mot de passe oublié ou autre */
+.login-container a {
+    text-decoration: none; /* Pas de soulignement */
+    color: #ffffff; /* Couleur des liens */
+    font-size: 14px; /* Taille du texte */
+}
+
+/* Effet survol pour les liens */
+.login-container a:hover {
+    text-decoration: underline; /* Soulignement au survol */
+}
+
+.hr-with-text {
+    display: flex; /* Utilisation de Flexbox pour le centrage */
+    align-items: center; /* Aligner verticalement */
+    text-align: center; /* Alignement du texte */
+    gap: 10px; /* Espace entre les éléments */
+}
+
+.hr-with-text hr {
+    flex-grow: 1; /* Pour que la ligne s'étire */
+    border: none; /* Supprime la bordure par défaut */
+    border-top: 1px solid #ccc; /* Ajoute une nouvelle bordure */
+}
+
+.hr-with-text span {
+    font-weight: bold; /* Rendre le texte en gras pour visibilité */
+    color: #ffffff; /* Couleur du texte */
+}
